@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "Mode Navigation",
+    "Modo Visita": "Mode Visite",
+    "welcome": "Bienvenue",
+    "splash_screen": {
+      "start": "Commencer"
+    },
+    "map_page": {
+      "search_hint": "Destination ?",
+      "route_button": "Démarrer l'itinéraire",
+      "start_route_message": "Zoom sur la Salle 10..."
+    }
+  }
+  

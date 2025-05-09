@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "Tryb Nawigacji",
+    "Modo Visita": "Tryb Wizyty",
+    "welcome": "Witamy",
+    "splash_screen": {
+      "start": "Start"
+    },
+    "map_page": {
+      "search_hint": "Cel?",
+      "route_button": "Rozpocznij Trasę",
+      "start_route_message": "Zbliżanie do sali 10..."
+    }
+  }
+  

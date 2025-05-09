@@ -1,0 +1,37 @@
+name: flutter_gps
+description: Aplicação Flutter para navegação na universidade.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  easy_localization: ^3.0.5    
+  webview_flutter: ^4.7.0       
+  google_fonts: ^6.2.1         
+  cupertino_icons: ^1.0.8    
+  flutter_tts: ^4.2.2   
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0         
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/lang/
+    - assets/logo_gps.png
+    - assets/266731462_10158858258747637_864892315712233715_n.jpg
+    - assets/23077544-24a4-4680-b802-2781e6dc94ec.png
+    - assets/1890d9e9-ffbd-4382-ab44-822dfaf06882.png
+    - assets/foto_camoes.png
+    - assets/00_piso.png
+    - assets/icon_camoes.png

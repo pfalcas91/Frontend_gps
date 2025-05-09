@@ -1,0 +1,13 @@
+{
+  "Modo Navegação": "Navigation Mode",
+  "Modo Visita": "Visit Mode",
+  "welcome": "Welcome",
+  "splash_screen": {
+    "start": "Start"
+  },
+  "map_page": {
+    "search_hint": "Destination?",
+    "route_button": "Start Route",
+    "start_route_message": "Zooming to Room 10..."
+  }
+}

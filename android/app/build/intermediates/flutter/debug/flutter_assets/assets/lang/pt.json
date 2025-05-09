@@ -1,0 +1,15 @@
+{
+    "splash_screen": {
+      "start": "Começar"
+    },
+    "home_page": {
+      "map": "Mapa",
+      "other_option": "Outra opção"
+    },
+    "map_page": {
+      "search_hint": "Destino?",
+      "route_button": "Efetuar Rota",
+      "start_route_message": "Aproximar para a Sala 10..."
+    }
+  }
+  

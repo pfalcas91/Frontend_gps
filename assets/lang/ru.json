@@ -1,0 +1,13 @@
+{
+  "Modo Navegação": "Режим навигации",
+  "Modo Visita": "Режим визита",
+  "welcome": "Добро пожаловать",
+  "splash_screen": {
+    "start": "Начать"
+  },
+  "map_page": {
+    "search_hint": "Место назначения?",
+    "route_button": "Начать маршрут",
+    "start_route_message": "Увеличение масштаба к комнате 10..."
+  }
+}

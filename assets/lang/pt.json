@@ -1,0 +1,13 @@
+{
+  "Modo Navegação": "Modo Navegação",
+  "Modo Visita": "Modo Visita",
+  "welcome": "Bem-vindo",
+  "splash_screen": {
+    "start": "Iniciar"
+  },
+  "map_page": {
+    "search_hint": "Destino?",
+    "route_button": "Iniciar Rota",
+    "start_route_message": "A aproximar da Sala 10..."
+  }
+}

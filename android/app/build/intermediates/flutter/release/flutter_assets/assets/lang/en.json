@@ -1,0 +1,15 @@
+{
+    "splash_screen": {
+      "start": "Start"
+    },
+    "home_page": {
+      "map": "Map",
+      "other_option": "Other option"
+    },
+    "map_page": {
+      "search_hint": "Destination?",
+      "route_button": "Start Route",
+      "start_route_message": "Approaching Room 10..."
+    }
+  }
+  

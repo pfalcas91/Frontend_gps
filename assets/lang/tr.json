@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "Navigasyon Modu",
+    "Modo Visita": "Ziyaret Modu",
+    "welcome": "Hoş geldiniz",
+    "splash_screen": {
+      "start": "Başlat"
+    },
+    "map_page": {
+      "search_hint": "Hedef?",
+      "route_button": "Rota Başlat",
+      "start_route_message": "Oda 10'a yaklaşılıyor..."
+    }
+  }
+  

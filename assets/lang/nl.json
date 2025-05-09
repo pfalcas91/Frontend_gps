@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "Navigatiemodus",
+    "Modo Visita": "Bezoekmodus",
+    "welcome": "Welkom",
+    "splash_screen": {
+      "start": "Starten"
+    },
+    "map_page": {
+      "search_hint": "Bestemming?",
+      "route_button": "Route Starten",
+      "start_route_message": "Inzoomen op lokaal 10..."
+    }
+  }
+  

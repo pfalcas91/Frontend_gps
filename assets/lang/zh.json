@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "导航模式",
+    "Modo Visita": "参观模式",
+    "welcome": "欢迎",
+    "splash_screen": {
+      "start": "开始"
+    },
+    "map_page": {
+      "search_hint": "目的地？",
+      "route_button": "开始路线",
+      "start_route_message": "正在放大至10号教室..."
+    }
+  }
+  

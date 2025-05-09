@@ -1,0 +1,15 @@
+{
+    "splash_screen": {
+      "start": "Начать"
+    },
+    "home_page": {
+      "map": "Карта",
+      "other_option": "Другая опция"
+    },
+    "map_page": {
+      "search_hint": "Пункт назначения?",
+      "route_button": "Построить маршрут",
+      "start_route_message": "Подходим к залу 10..."
+    }
+  }
+  

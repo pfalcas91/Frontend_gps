@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.flutter_gps.app-mergeDebugResources-13:/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\prafa\\.gradle\\caches\\transforms-3\\6756d962c62ce8b4bc3021eabc323668\\transformed\\core-1.6.0\\res\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

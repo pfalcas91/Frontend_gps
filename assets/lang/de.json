@@ -1,0 +1,14 @@
+{
+    "Modo Navegação": "Navigationsmodus",
+    "Modo Visita": "Besuchsmodus",
+    "welcome": "Willkommen",
+    "splash_screen": {
+      "start": "Starten"
+    },
+    "map_page": {
+      "search_hint": "Ziel?",
+      "route_button": "Route Starten",
+      "start_route_message": "Zoom zur Raum 10..."
+    }
+  }
+  

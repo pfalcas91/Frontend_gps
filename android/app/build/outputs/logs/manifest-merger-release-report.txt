@@ -1,0 +1,187 @@
+-- Merging decision tree log ---
+application
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:2:5-33:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\prafa\.gradle\caches\transforms-3\7d6aeb3916dfe9c6c7669d94ac03dc5c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\prafa\.gradle\caches\transforms-3\7d6aeb3916dfe9c6c7669d94ac03dc5c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:3:9-36
+	android:icon
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:5:9-43
+	android:name
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:4:9-42
+manifest
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+MERGED from [:path_provider_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.10\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.3.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:webview_flutter_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.8\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\eed80615420a9a6fa07ec76559ee5734\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\77d64353a493fd4f79568e07f634cb6a\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\48e981a0346d31a6e8dc703f93aac46b\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\prafa\.gradle\caches\transforms-3\87e03341adbe3adfed4117ec71471fb7\transformed\webkit-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\8e23ce6bfe9f7f34b0dc1e6ec6f03478\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\221bed7aeeedfb804a895d08e6247eb7\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\4fecee525f03d4d9acab473c6b8c79d6\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\7d403e162dc88cffd2dee264c821e027\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\aeba69d0afd9047671d0cb7aa4e68b9c\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\prafa\.gradle\caches\transforms-3\911d02e1546ecc71fc4260c494b2b0c9\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\d35d0281a4cfe80614e760ae998be98f\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\b27e91d3f3f6d8e32081b535ef46da64\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\e8952407046591f4524c1f4f8d06f3d4\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\2ce306676934493850a3124318829f13\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\19271cd97b42a6341f0ce7ec8e1a8b4c\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\prafa\.gradle\caches\transforms-3\7d6aeb3916dfe9c6c7669d94ac03dc5c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\prafa\.gradle\caches\transforms-3\477aac55d5b879ad9d541132314870f9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\6afc9a3af6a66b6f30dbb8d5999c1736\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+	package
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:1-45:12
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:1:11-69
+queries
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:39:5-44:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:40:9-43:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:41:13-72
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:41:21-70
+data
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:42:13-50
+	android:mimeType
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:42:19-48
+uses-sdk
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+MERGED from [:path_provider_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.10\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.10\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.3.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.3.2\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.8\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:webview_flutter_android] C:\Users\prafa\AppData\Local\Pub\Cache\hosted\pub.dev\webview_flutter_android-3.16.8\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\eed80615420a9a6fa07ec76559ee5734\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\eed80615420a9a6fa07ec76559ee5734\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\77d64353a493fd4f79568e07f634cb6a\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\77d64353a493fd4f79568e07f634cb6a\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\48e981a0346d31a6e8dc703f93aac46b\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\48e981a0346d31a6e8dc703f93aac46b\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\prafa\.gradle\caches\transforms-3\87e03341adbe3adfed4117ec71471fb7\transformed\webkit-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\prafa\.gradle\caches\transforms-3\87e03341adbe3adfed4117ec71471fb7\transformed\webkit-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\8e23ce6bfe9f7f34b0dc1e6ec6f03478\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\8e23ce6bfe9f7f34b0dc1e6ec6f03478\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\221bed7aeeedfb804a895d08e6247eb7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\221bed7aeeedfb804a895d08e6247eb7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\4fecee525f03d4d9acab473c6b8c79d6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\4fecee525f03d4d9acab473c6b8c79d6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\7d403e162dc88cffd2dee264c821e027\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\7d403e162dc88cffd2dee264c821e027\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\aeba69d0afd9047671d0cb7aa4e68b9c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\aeba69d0afd9047671d0cb7aa4e68b9c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\prafa\.gradle\caches\transforms-3\61a3d0e0172c514700b9d130ee04201c\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\prafa\.gradle\caches\transforms-3\911d02e1546ecc71fc4260c494b2b0c9\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\prafa\.gradle\caches\transforms-3\911d02e1546ecc71fc4260c494b2b0c9\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\d35d0281a4cfe80614e760ae998be98f\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\d35d0281a4cfe80614e760ae998be98f\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\b27e91d3f3f6d8e32081b535ef46da64\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\b27e91d3f3f6d8e32081b535ef46da64\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\e8952407046591f4524c1f4f8d06f3d4\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\e8952407046591f4524c1f4f8d06f3d4\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\2ce306676934493850a3124318829f13\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\prafa\.gradle\caches\transforms-3\2ce306676934493850a3124318829f13\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\19271cd97b42a6341f0ce7ec8e1a8b4c\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\prafa\.gradle\caches\transforms-3\19271cd97b42a6341f0ce7ec8e1a8b4c\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\prafa\.gradle\caches\transforms-3\7d6aeb3916dfe9c6c7669d94ac03dc5c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\prafa\.gradle\caches\transforms-3\7d6aeb3916dfe9c6c7669d94ac03dc5c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\prafa\.gradle\caches\transforms-3\477aac55d5b879ad9d541132314870f9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\prafa\.gradle\caches\transforms-3\477aac55d5b879ad9d541132314870f9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\6afc9a3af6a66b6f30dbb8d5999c1736\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\prafa\.gradle\caches\transforms-3\6afc9a3af6a66b6f30dbb8d5999c1736\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml
+activity#com.example.flutter_gps.MainActivity
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:6:9-27:20
+	android:launchMode
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:9:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:13:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:14:13-55
+	android:exported
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:8:13-36
+	android:configChanges
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:12:13-163
+	android:theme
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:11:13-47
+	android:taskAffinity
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:10:13-36
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:7:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:19:13-22:17
+	android:resource
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:21:15-52
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:20:15-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:24:17-68
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:25:17-76
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:25:27-74
+meta-data#flutterEmbedding
+ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:30:9-32:33
+	android:value
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:32:13-30
+	android:name
+		ADDED from C:\Users\prafa\Documents\flutter_gps\android\app\src\main\AndroidManifest.xml:31:13-44
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\prafa\.gradle\caches\transforms-3\862f900574f1ff85594dddb260956b71\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
