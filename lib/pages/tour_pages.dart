@@ -11,8 +11,9 @@ class TourPage extends StatefulWidget {
 class TourStop {
   final Offset position;
   final String text;
+  final String floor;
 
-  TourStop(this.position, this.text);
+  TourStop(this.position, this.text, this.floor);
 }
 
 class _TourPageState extends State<TourPage> {
@@ -20,34 +21,30 @@ class _TourPageState extends State<TourPage> {
   bool isSpeaking = false;
   bool showChat = true;
   int currentStopIndex = 0;
+  String selectedFloor = 'piso0';
 
   final List<TourStop> tourStops = [
-    TourStop(
-      const Offset(168, 328), // Entrada principal
-      'Bem-vindo à Universidade Autónoma de Lisboa. Este edifício, antes de ser adaptado a instalações universitárias, foi um palácio do século XIX. Mantém traços arquitetónicos clássicos, e a sua entrada imponente era originalmente o acesso de carruagens.',
-    ),
-    TourStop(
-      const Offset(200, 190), // Átrio
-      'Este átrio é o coração da universidade. Aqui realizam-se eventos, exposições e serve como ponto de encontro entre alunos e professores. À sua volta situam-se salas de aula e acessos a diferentes áreas da faculdade.',
-    ),
-    TourStop(
-      const Offset(250, 95), // Estátua de Camões
-      'Luís de Camões é um símbolo da cultura e da língua portuguesa. A estátua presente neste espaço representa o compromisso da universidade com o conhecimento, a literatura e a identidade nacional.',
-    ),
+    // PISO 0
+    TourStop(const Offset(168, 328), 'Construído no século XVII pelo Conde de Redondo...', 'piso0'),
+    TourStop(const Offset(190, 250), 'A Sala dos Atos é o local institucional dos grandes atos...', 'piso0'),
+    TourStop(const Offset(200, 190), 'O portal do palácio abre para uma larga passagem...', 'piso0'),
+    TourStop(const Offset(250, 95), 'O busto de Luís de Camões, em bronze, é do Mestre Escultor Joaquim Correia...', 'piso0'),
+    TourStop(const Offset(130, 300), 'Ponto de informação sobre salas e docentes.', 'piso0'),
+    TourStop(const Offset(300, 280), 'Esta sala tem parte das paredes forradas a azulejos... Aqui funciona o Gabinete Erasmus.', 'piso0'),
+
+    // PISO 1
+    TourStop(const Offset(420, 180), 'Estrutura de apoio a professores e estudantes...', 'piso1'),
+    TourStop(const Offset(185, 460), 'O Centro de Informática dá suporte às atividades académicas...', 'piso1'),
+    TourStop(const Offset(260, 340), 'Gabinete para a Inclusão e Resiliência Universitária...', 'piso1'),
+    TourStop(const Offset(230, 420), 'A Associação de Estudantes representa os alunos...', 'piso1'),
+
+    // PISO -1
+    TourStop(const Offset(310, 510), 'Para aquisição de livros e materiais didáticos... (Press Center)', 'piso-1'),
+    TourStop(const Offset(150, 340), 'Refeições com uma ementa variada. O bar é um ponto de encontro perfeito para relaxar...', 'piso-1'),
   ];
 
   String get explanation => tourStops[currentStopIndex].text;
-
-  @override
-  void initState() {
-    super.initState();
-    _configureTts();
-  }
-
-  void _configureTts() async {
-    await flutterTts.setLanguage("pt-PT");
-    await flutterTts.setSpeechRate(0.5);
-  }
+  String get currentFloor => tourStops[currentStopIndex].floor;
 
   void _toggleAudio() async {
     if (isSpeaking) {
@@ -55,7 +52,6 @@ class _TourPageState extends State<TourPage> {
     } else {
       await flutterTts.speak(explanation);
     }
-
     setState(() {
       isSpeaking = !isSpeaking;
     });
@@ -71,8 +67,20 @@ class _TourPageState extends State<TourPage> {
     flutterTts.stop();
     setState(() {
       currentStopIndex = (currentStopIndex + 1) % tourStops.length;
+      selectedFloor = tourStops[currentStopIndex].floor;
       isSpeaking = false;
     });
+  }
+
+  String _getMapImage() {
+    switch (selectedFloor) {
+      case 'piso1':
+        return 'assets/01_piso-1.png';
+      case 'piso-1':
+        return 'assets/01_piso.png';
+      default:
+        return 'assets/00_piso.png';
+    }
   }
 
   @override
@@ -83,123 +91,135 @@ class _TourPageState extends State<TourPage> {
 
   @override
   Widget build(BuildContext context) {
+    final currentStop = tourStops[currentStopIndex];
+
     return Scaffold(
-      body: Stack(
-        children: [
-          InteractiveViewer(
-            minScale: 1.0,
-            maxScale: 3.5,
-            child: Stack(
-              children: [
-                Image.asset(
-                  'assets/00_piso.png',
-                  fit: BoxFit.cover,
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height,
-                ),
-
-                // Ícones dos pontos
-                ...tourStops.asMap().entries.map((entry) {
-                  final index = entry.key;
-                  final stop = entry.value;
-                  return Positioned(
-                    left: stop.position.dx,
-                    top: stop.position.dy,
-                    child: Image.asset(
-                      'assets/icon_camoes.png',
-                      width: 30,
-                      height: 30,
-                      color: index == currentStopIndex
-                          ? null
-                          : Colors.grey.withOpacity(0.5),
+      backgroundColor: const Color(0xFF0D47A1),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.9,
+                height: MediaQuery.of(context).size.height * 0.75,
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      _getMapImage(),
+                      fit: BoxFit.contain,
+                      width: double.infinity,
+                      height: double.infinity,
                     ),
-                  );
-                }),
-
-                // Seta vermelha dinâmica
-                Positioned(
-                  left: tourStops[currentStopIndex].position.dx,
-                  top: tourStops[currentStopIndex].position.dy - 40,
-                  child: const Icon(Icons.navigation, size: 40, color: Colors.red),
+                    if (currentStop.floor == selectedFloor)
+                      Positioned(
+                        left: currentStop.position.dx,
+                        top: currentStop.position.dy - 20,
+                        child: const Icon(Icons.navigation,
+                            size: 30, color: Colors.red),
+                      ),
+                  ],
                 ),
-              ],
+              ),
             ),
-          ),
-
-          // Caixa de texto (chat)
-          if (showChat)
+            if (showChat)
+              Positioned(
+                top: 30,
+                right: 10,
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.95),
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: [
+                      BoxShadow(color: Colors.black26, blurRadius: 6)
+                    ],
+                  ),
+                  child: Text(
+                    explanation,
+                    style: const TextStyle(fontSize: 16),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ),
             Positioned(
-              top: 50,
+              top: 10,
+              right: 60,
+              child: IconButton(
+                icon: Icon(
+                  isSpeaking ? Icons.volume_off : Icons.volume_up,
+                  color: Colors.white,
+                ),
+                onPressed: _toggleAudio,
+              ),
+            ),
+            Positioned(
+              top: 10,
               right: 10,
+              child: IconButton(
+                icon: Icon(
+                  showChat ? Icons.close_fullscreen : Icons.open_in_full,
+                  color: Colors.white,
+                ),
+                onPressed: _toggleChatVisibility,
+              ),
+            ),
+            Positioned(
+              top: 10,
+              left: 10,
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () {
+                  flutterTts.stop();
+                  Navigator.pop(context);
+                },
+              ),
+            ),
+            Positioned(
+              bottom: 20,
+              right: 20,
+              child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                ),
+                onPressed: _goToNextStop,
+                icon: const Icon(Icons.arrow_forward),
+                label: const Text("Seguinte"),
+              ),
+            ),
+
+            // Botão de seleção de piso (dropdown)
+            Positioned(
+              top: 10,
+              left: MediaQuery.of(context).size.width / 2 - 60,
               child: Container(
-                width: MediaQuery.of(context).size.width * 0.6,
-                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.95),
-                  borderRadius: BorderRadius.circular(15),
-                  boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 6)],
+                  borderRadius: BorderRadius.circular(8),
                 ),
-                child: Text(
-                  explanation,
-                  style: const TextStyle(fontSize: 16),
-                  textAlign: TextAlign.justify,
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: DropdownButtonHideUnderline(
+                  child: DropdownButton<String>(
+                    value: selectedFloor,
+                    items: const [
+                      DropdownMenuItem(value: 'piso0', child: Text('Piso 0')),
+                      DropdownMenuItem(value: 'piso1', child: Text('Piso 1')),
+                      DropdownMenuItem(value: 'piso-1', child: Text('Piso -1')),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) {
+                        setState(() {
+                          selectedFloor = value;
+                        });
+                      }
+                    },
+                  ),
                 ),
               ),
             ),
-
-          // Botão de ocultar chat
-          Positioned(
-            top: 10,
-            right: 10,
-            child: IconButton(
-              icon: Icon(
-                showChat ? Icons.close_fullscreen : Icons.open_in_full,
-                color: Colors.black,
-              ),
-              tooltip: showChat ? 'Minimizar texto' : 'Mostrar texto',
-              onPressed: _toggleChatVisibility,
-            ),
-          ),
-
-          // Botão de áudio
-          Positioned(
-            top: 10,
-            right: 60,
-            child: IconButton(
-              icon: Icon(
-                isSpeaking ? Icons.volume_off : Icons.volume_up,
-                color: Colors.black,
-              ),
-              tooltip: isSpeaking ? 'Desativar áudio' : 'Ativar áudio',
-              onPressed: _toggleAudio,
-            ),
-          ),
-
-          // Botão voltar
-          Positioned(
-            top: 10,
-            left: 10,
-            child: IconButton(
-              icon: const Icon(Icons.arrow_back, color: Colors.black),
-              onPressed: () {
-                flutterTts.stop();
-                Navigator.pop(context);
-              },
-            ),
-          ),
-
-          // Botão “Seguinte”
-          Positioned(
-            bottom: 20,
-            right: 20,
-            child: ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),
-              onPressed: _goToNextStop,
-              icon: const Icon(Icons.arrow_forward),
-              label: const Text("Seguinte"),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

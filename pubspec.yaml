@@ -21,7 +21,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0         
+  flutter_lints: ^4.0.0   
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10      
 
 flutter:
   uses-material-design: true
@@ -35,4 +37,6 @@ flutter:
     - assets/1890d9e9-ffbd-4382-ab44-822dfaf06882.png
     - assets/foto_camoes.png
     - assets/00_piso.png
+    - assets/01_piso.png
+    - assets/01_piso-1.png
     - assets/icon_camoes.png
